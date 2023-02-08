@@ -1,0 +1,30 @@
+{"person":
+    [
+        {
+            "name": "Cervantes, Miguel de",
+            "issues": [
+                {
+                    "issue": "1",
+                    "page": [1],
+                    "url": "/issues/001/n001a0001/"
+                },
+                {
+                    "issue": "2",
+                    "page": [40, 43],
+                    "url": "/issues/002/n002a0001/"
+                }
+            ]
+            
+    },
+        {
+            "name": "Alas, Leopoldo (Clarín)",
+            "issues": [
+                {
+                    "issue": "1",
+                    "page": [2],
+                    "url": "/issues/001/n001a0001/"
+                }
+            ]
+    }
+    ]
+}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+
+<section class="project-list">
+    <h2>Sumario</h2>
+    <ul>
+        {{ range .Params.contents }}
+        <li><a href={{ .link }}>{{ .page }}</a></li>
+        {{ end }}
+    </ul>
+</section>
+
+
+{{ end }}

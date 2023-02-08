@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+<h3>Índice onomástico</h3>
+<ul>
+    {{ range .Site.Data.authors.person }}
+    <li>{{ .name }}
+        <ul>
+            {{ range .issues }}
+            <li>
+                <a href="{{ .url }}">{{ .issue }}</a>:  {{ range .page }} p. {{ . }} {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

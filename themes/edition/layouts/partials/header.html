@@ -1,0 +1,19 @@
+<header>
+    <!--<h1>{{ .Site.Title }}</h1>-->
+    <h1>Lectura Amena</h1>
+    <h2>Edición Digital Académica</h2>
+</header>
+<nav>
+    <a href="/">Inicio</a>
+    <a href="/issues">Números</a>
+    <a href="/indices">Índices</a>
+    <a href="/about">Acerca de</a>
+</nav>
+<input type="search" id="searchField">
+    <button id="searchButton">Search</button>
+    <div id="output">
+        <p>Waiting for search input</p>
+    </div>
+    <script src="//unpkg.com/lunr@2.3.6/lunr.js"></script>
+    <script src="//unpkg.com/axios@0.19.0/dist/axios.js"></script>
+    <script src="{{ "js/search.js" | relURL }}"></script>
